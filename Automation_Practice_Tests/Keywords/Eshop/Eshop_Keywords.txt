@@ -1,0 +1,23 @@
+*** Settings ***
+Library    SeleniumLibrary
+Variables	../../Objects/Eshop/Eshop_Objects.py
+Resource    ../../Resources/Eshop/Sorting_Filtering_Variables.txt
+
+*** Keywords ***    
+Capture Screenshot And Close Browser
+    Capture Page Screenshot    
+    Close Browser
+
+Open Women Section
+    Open Browser    ${WOMEN_SECTION_URL}    ${BROWSER}
+    Maximize Browser Window
+    Wait Until Page Contains Element    ${Sorting_dropdown}
+    
+Filter By Dresses Category
+	Select Checkbox    ${Filtering_categories_dresses_checkbox}
+    Wait Until Element Is Visible    ${Enabled_filters}
+
+	
+    
+
+    

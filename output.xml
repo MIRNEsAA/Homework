@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181121 08:14:43.408" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie" id="s1" name="Homework revie">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie\Automation_Practice_Tests" id="s1-s1" name="Automation Practice Tests">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie\Automation_Practice_Tests\Tests" id="s1-s1-s1" name="Tests">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie\Automation_Practice_Tests\Tests\Automation_Practice" id="s1-s1-s1-s1" name="Automation Practice">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie\Automation_Practice_Tests\Tests\Automation_Practice\eshopAlza.robot" id="s1-s1-s1-s1-s1" name="eshopAlza">
+<kw type="setup" name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181121 08:14:44.235" level="INFO">Opening browser 'Chrome' to base url 'https://www.alza.cz'.</msg>
+<status status="PASS" endtime="20181121 08:14:48.457" starttime="20181121 08:14:44.235"></status>
+</kw>
+<test id="s1-s1-s1-s1-s1-t1" name="The End To End Test">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181121 08:14:49.578" starttime="20181121 08:14:48.458"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[contains(text(),'Smart')]</arg>
+</arguments>
+<msg timestamp="20181121 08:14:49.581" level="INFO">Clicking link 'xpath://a[contains(text(),'Smart')]'.</msg>
+<status status="PASS" endtime="20181121 08:14:51.520" starttime="20181121 08:14:49.580"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="hlCommodityStatusNew"]</arg>
+</arguments>
+<msg timestamp="20181121 08:14:51.520" level="INFO">Clicking element 'xpath://*[@id="hlCommodityStatusNew"]'.</msg>
+<status status="PASS" endtime="20181121 08:14:51.617" starttime="20181121 08:14:51.520"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20181121 08:14:56.619" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20181121 08:14:56.619" starttime="20181121 08:14:51.617"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://a[contains(text(),'LEGO Boost 17101')]</arg>
+</arguments>
+<status status="PASS" endtime="20181121 08:14:56.652" starttime="20181121 08:14:56.619"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[contains(text(),'LEGO Boost 17101')]</arg>
+</arguments>
+<msg timestamp="20181121 08:14:56.653" level="INFO">Clicking link 'xpath://a[contains(text(),'LEGO Boost 17101')]'.</msg>
+<status status="PASS" endtime="20181121 08:14:57.673" starttime="20181121 08:14:56.653"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='cpcm_cpc_tdAmount']/span/div/div/a/span[2]</arg>
+</arguments>
+<msg timestamp="20181121 08:14:57.674" level="INFO">Clicking element 'xpath://div[@id='cpcm_cpc_tdAmount']/span/div/div/a/span[2]'.</msg>
+<status status="PASS" endtime="20181121 08:14:58.377" starttime="20181121 08:14:57.673"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='content0']/div[2]/a[2]/span</arg>
+</arguments>
+<msg timestamp="20181121 08:14:58.378" level="INFO">Clicking element 'xpath://div[@id='content0']/div[2]/a[2]/span'.</msg>
+<status status="PASS" endtime="20181121 08:14:59.114" starttime="20181121 08:14:58.377"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='blockBtnRight']/a</arg>
+</arguments>
+<msg timestamp="20181121 08:14:59.115" level="INFO">Clicking element 'xpath://div[@id='blockBtnRight']/a'.</msg>
+<status status="PASS" endtime="20181121 08:14:59.198" starttime="20181121 08:14:59.114"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://label[@class=' alzacheckbox'][2]</arg>
+</arguments>
+<msg timestamp="20181121 08:14:59.199" level="INFO">Clicking element 'xpath://label[@class=' alzacheckbox'][2]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181121 08:14:59.883" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181121 08:14:59.884" starttime="20181121 08:14:59.211"></status>
+</kw>
+<msg timestamp="20181121 08:14:59.886" level="FAIL">Element with locator 'xpath://label[@class=' alzacheckbox'][2]' not found.</msg>
+<status status="FAIL" endtime="20181121 08:14:59.886" starttime="20181121 08:14:59.198"></status>
+</kw>
+<tags>
+<tag>search_electronics2</tag>
+</tags>
+<status status="FAIL" endtime="20181121 08:14:59.887" critical="yes" starttime="20181121 08:14:48.457">Element with locator 'xpath://label[@class=' alzacheckbox'][2]' not found.</status>
+</test>
+<status status="FAIL" endtime="20181121 08:14:59.887" starttime="20181121 08:14:43.525"></status>
+</suite>
+<status status="FAIL" endtime="20181121 08:14:59.889" starttime="20181121 08:14:43.523"></status>
+</suite>
+<status status="FAIL" endtime="20181121 08:14:59.890" starttime="20181121 08:14:43.521"></status>
+</suite>
+<status status="FAIL" endtime="20181121 08:14:59.892" starttime="20181121 08:14:43.519"></status>
+</suite>
+<status status="FAIL" endtime="20181121 08:14:59.893" starttime="20181121 08:14:43.498"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">search_electronics2</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Homework revie" pass="0">Homework revie</stat>
+<stat fail="1" id="s1-s1" name="Automation Practice Tests" pass="0">Homework revie.Automation Practice Tests</stat>
+<stat fail="1" id="s1-s1-s1" name="Tests" pass="0">Homework revie.Automation Practice Tests.Tests</stat>
+<stat fail="1" id="s1-s1-s1-s1" name="Automation Practice" pass="0">Homework revie.Automation Practice Tests.Tests.Automation Practice</stat>
+<stat fail="1" id="s1-s1-s1-s1-s1" name="eshopAlza" pass="0">Homework revie.Automation Practice Tests.Tests.Automation Practice.eshopAlza</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

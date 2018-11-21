@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.0 on win32)" generated="20181028 15:38:18.450">
+<suite id="s1" name="Dialog Tests" source="C:\Users\katar\eclipse-workspace\Dialog_Tests">
+<suite id="s1-s1" name="Dialog Input" source="C:\Users\katar\eclipse-workspace\Dialog_Tests\Dialog_Input.robot">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Setup</arg>
+</arguments>
+<msg timestamp="20181028 15:38:18.534" level="INFO">Setup</msg>
+<status status="PASS" starttime="20181028 15:38:18.533" endtime="20181028 15:38:18.534"></status>
+</kw>
+<test id="s1-s1-t1" name="Checking User Input">
+<kw name="Check User Input">
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>Please enter a message.</arg>
+</arguments>
+<assign>
+<var>${user_input}</var>
+</assign>
+<msg timestamp="20181028 15:38:24.596" level="INFO">${user_input} = hackerschool</msg>
+<status status="PASS" starttime="20181028 15:38:18.536" endtime="20181028 15:38:24.597"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${user_input}</arg>
+</arguments>
+<status status="PASS" starttime="20181028 15:38:24.597" endtime="20181028 15:38:24.599"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${user_input}</arg>
+<arg>${expected_message}</arg>
+</arguments>
+<status status="PASS" starttime="20181028 15:38:24.600" endtime="20181028 15:38:24.601"></status>
+</kw>
+<status status="PASS" starttime="20181028 15:38:18.536" endtime="20181028 15:38:24.601"></status>
+</kw>
+<doc>Checking user input and comparing it to the expected value.</doc>
+<tags>
+<tag>DialogInput</tag>
+</tags>
+<status status="PASS" starttime="20181028 15:38:18.535" endtime="20181028 15:38:24.602" critical="yes"></status>
+</test>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Teardown</arg>
+</arguments>
+<msg timestamp="20181028 15:38:24.604" level="INFO">Teardown</msg>
+<status status="PASS" starttime="20181028 15:38:24.603" endtime="20181028 15:38:24.605"></status>
+</kw>
+<doc>Dialog Tests</doc>
+<status status="PASS" starttime="20181028 15:38:18.509" endtime="20181028 15:38:24.605"></status>
+</suite>
+<status status="PASS" starttime="20181028 15:38:18.485" endtime="20181028 15:38:24.609"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">DialogInput</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Dialog Tests">Dialog Tests</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Dialog Input">Dialog Tests.Dialog Input</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
