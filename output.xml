@@ -1,130 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181121 08:14:43.408" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
-<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie" id="s1" name="Homework revie">
-<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie\Automation_Practice_Tests" id="s1-s1" name="Automation Practice Tests">
-<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie\Automation_Practice_Tests\Tests" id="s1-s1-s1" name="Tests">
-<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie\Automation_Practice_Tests\Tests\Automation_Practice" id="s1-s1-s1-s1" name="Automation Practice">
-<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_revie\Automation_Practice_Tests\Tests\Automation_Practice\eshopAlza.robot" id="s1-s1-s1-s1-s1" name="eshopAlza">
+<robot generated="20181122 07:55:48.367" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_review" id="s1" name="Homework review">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_review\Automation_Practice_Tests" id="s1-s1" name="Automation Practice Tests">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_review\Automation_Practice_Tests\Tests" id="s1-s1-s1" name="Tests">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_review\Automation_Practice_Tests\Tests\Alza_test" id="s1-s1-s1-s1" name="Alza test">
+<suite source="C:\Users\mirnesa.hodzic\eclipse-workspace\Homework_review\Automation_Practice_Tests\Tests\Alza_test\TC_Search.robot" id="s1-s1-s1-s1-s1" name="TC Search">
 <kw type="setup" name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181121 08:14:44.235" level="INFO">Opening browser 'Chrome' to base url 'https://www.alza.cz'.</msg>
-<status status="PASS" endtime="20181121 08:14:48.457" starttime="20181121 08:14:44.235"></status>
+<msg timestamp="20181122 07:55:49.221" level="INFO">Opening browser 'Chrome' to base url 'https://www.alza.cz'.</msg>
+<status status="PASS" endtime="20181122 07:55:53.395" starttime="20181122 07:55:49.221"></status>
 </kw>
-<test id="s1-s1-s1-s1-s1-t1" name="The End To End Test">
+<test id="s1-s1-s1-s1-s1-t1" name="Verify the SEARCH_select option">
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20181121 08:14:49.578" starttime="20181121 08:14:48.458"></status>
+<status status="PASS" endtime="20181122 07:55:54.512" starttime="20181122 07:55:53.397"></status>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://a[contains(text(),'Smart')]</arg>
-</arguments>
-<msg timestamp="20181121 08:14:49.581" level="INFO">Clicking link 'xpath://a[contains(text(),'Smart')]'.</msg>
-<status status="PASS" endtime="20181121 08:14:51.520" starttime="20181121 08:14:49.580"></status>
-</kw>
+<kw name="Write Wanted Product">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>xpath://*[@id="hlCommodityStatusNew"]</arg>
+<arg>xpath://*[@id="search"]</arg>
 </arguments>
-<msg timestamp="20181121 08:14:51.520" level="INFO">Clicking element 'xpath://*[@id="hlCommodityStatusNew"]'.</msg>
-<status status="PASS" endtime="20181121 08:14:51.617" starttime="20181121 08:14:51.520"></status>
+<msg timestamp="20181122 07:55:54.513" level="INFO">Clicking element 'xpath://*[@id="search"]'.</msg>
+<status status="PASS" endtime="20181122 07:55:54.617" starttime="20181122 07:55:54.513"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="edtSearch"]</arg>
+<arg>LEGO Boost 17101</arg>
+</arguments>
+<msg timestamp="20181122 07:55:54.619" level="INFO">Typing text 'LEGO Boost 17101' into text field 'xpath://*[@id="edtSearch"]'.</msg>
+<status status="PASS" endtime="20181122 07:55:54.928" starttime="20181122 07:55:54.618"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20181121 08:14:56.619" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20181121 08:14:56.619" starttime="20181121 08:14:51.617"></status>
+<msg timestamp="20181122 07:55:59.928" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20181122 07:55:59.928" starttime="20181122 07:55:54.928"></status>
+</kw>
+<status status="PASS" endtime="20181122 07:55:59.929" starttime="20181122 07:55:54.512"></status>
+</kw>
+<kw name="Select Wanted Product">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="ui-id-1"]/li[@title='LEGO Boost 17101']</arg>
+</arguments>
+<msg timestamp="20181122 07:55:59.930" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="ui-id-1"]/li[@title='LEGO Boost 17101']'.</msg>
+<status status="PASS" endtime="20181122 07:55:59.978" starttime="20181122 07:55:59.930"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
-<arg>xpath://a[contains(text(),'LEGO Boost 17101')]</arg>
+<arg>xpath://*[@id="ui-id-1"]/li[@title='LEGO Boost 17101']</arg>
+<arg>30s</arg>
 </arguments>
-<status status="PASS" endtime="20181121 08:14:56.652" starttime="20181121 08:14:56.619"></status>
+<status status="PASS" endtime="20181122 07:56:00.008" starttime="20181122 07:55:59.978"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
-<arg>xpath://a[contains(text(),'LEGO Boost 17101')]</arg>
+<arg>xpath://*[@id="ui-id-1"]/li/a</arg>
 </arguments>
-<msg timestamp="20181121 08:14:56.653" level="INFO">Clicking link 'xpath://a[contains(text(),'LEGO Boost 17101')]'.</msg>
-<status status="PASS" endtime="20181121 08:14:57.673" starttime="20181121 08:14:56.653"></status>
+<msg timestamp="20181122 07:56:00.009" level="INFO">Clicking link 'xpath://*[@id="ui-id-1"]/li/a'.</msg>
+<status status="PASS" endtime="20181122 07:56:00.884" starttime="20181122 07:56:00.008"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
+<status status="PASS" endtime="20181122 07:56:00.885" starttime="20181122 07:55:59.929"></status>
+</kw>
+<kw name="See Details of Product">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
-<arg>xpath://div[@id='cpcm_cpc_tdAmount']/span/div/div/a/span[2]</arg>
+<arg>xpath://div[@id='detailItem']/div/div/h1</arg>
 </arguments>
-<msg timestamp="20181121 08:14:57.674" level="INFO">Clicking element 'xpath://div[@id='cpcm_cpc_tdAmount']/span/div/div/a/span[2]'.</msg>
-<status status="PASS" endtime="20181121 08:14:58.377" starttime="20181121 08:14:57.673"></status>
+<assign>
+<var>${the_SearchedProduct}</var>
+</assign>
+<msg timestamp="20181122 07:56:00.916" level="INFO">${the_SearchedProduct} = LEGO Boost 17101</msg>
+<status status="PASS" endtime="20181122 07:56:00.916" starttime="20181122 07:56:00.886"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
 <arguments>
-<arg>xpath://div[@id='content0']/div[2]/a[2]/span</arg>
+<arg>${the_SearchedProduct}</arg>
+<arg>LEGO Boost 17101</arg>
 </arguments>
-<msg timestamp="20181121 08:14:58.378" level="INFO">Clicking element 'xpath://div[@id='content0']/div[2]/a[2]/span'.</msg>
-<status status="PASS" endtime="20181121 08:14:59.114" starttime="20181121 08:14:58.377"></status>
+<status status="PASS" endtime="20181122 07:56:00.916" starttime="20181122 07:56:00.916"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://div[@id='blockBtnRight']/a</arg>
-</arguments>
-<msg timestamp="20181121 08:14:59.115" level="INFO">Clicking element 'xpath://div[@id='blockBtnRight']/a'.</msg>
-<status status="PASS" endtime="20181121 08:14:59.198" starttime="20181121 08:14:59.114"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath://label[@class=' alzacheckbox'][2]</arg>
-</arguments>
-<msg timestamp="20181121 08:14:59.199" level="INFO">Clicking element 'xpath://label[@class=' alzacheckbox'][2]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 08:14:59.883" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181121 08:14:59.884" starttime="20181121 08:14:59.211"></status>
-</kw>
-<msg timestamp="20181121 08:14:59.886" level="FAIL">Element with locator 'xpath://label[@class=' alzacheckbox'][2]' not found.</msg>
-<status status="FAIL" endtime="20181121 08:14:59.886" starttime="20181121 08:14:59.198"></status>
+<status status="PASS" endtime="20181122 07:56:00.917" starttime="20181122 07:56:00.885"></status>
 </kw>
 <tags>
-<tag>search_electronics2</tag>
+<tag>search_electronics</tag>
 </tags>
-<status status="FAIL" endtime="20181121 08:14:59.887" critical="yes" starttime="20181121 08:14:48.457">Element with locator 'xpath://label[@class=' alzacheckbox'][2]' not found.</status>
+<status status="PASS" endtime="20181122 07:56:00.917" critical="yes" starttime="20181122 07:55:53.396"></status>
 </test>
-<status status="FAIL" endtime="20181121 08:14:59.887" starttime="20181121 08:14:43.525"></status>
+<test id="s1-s1-s1-s1-s1-t2" name="Verify the SEARCH_button">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181122 07:56:00.920" starttime="20181122 07:56:00.918"></status>
+</kw>
+<kw name="Write Wanted Product">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="search"]</arg>
+</arguments>
+<msg timestamp="20181122 07:56:00.921" level="INFO">Clicking element 'xpath://*[@id="search"]'.</msg>
+<status status="PASS" endtime="20181122 07:56:00.998" starttime="20181122 07:56:00.921"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="edtSearch"]</arg>
+<arg>LEGO Boost 17101</arg>
+</arguments>
+<msg timestamp="20181122 07:56:00.998" level="INFO">Typing text 'LEGO Boost 17101' into text field 'xpath://*[@id="edtSearch"]'.</msg>
+<status status="PASS" endtime="20181122 07:56:01.187" starttime="20181122 07:56:00.998"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20181122 07:56:06.188" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20181122 07:56:06.188" starttime="20181122 07:56:01.188"></status>
+</kw>
+<status status="PASS" endtime="20181122 07:56:06.189" starttime="20181122 07:56:00.921"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Search}</arg>
+</arguments>
+<msg timestamp="20181122 07:56:06.192" level="INFO">Clicking element 'xpath://*[@id="btnSearch"]'.</msg>
+<status status="PASS" endtime="20181122 07:56:07.264" starttime="20181122 07:56:06.191"></status>
+</kw>
+<kw name="Check All Product with similar name">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://div[@id='tabsc']/div[@id='tabs']</arg>
+</arguments>
+<status status="PASS" endtime="20181122 07:56:07.301" starttime="20181122 07:56:07.266"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<msg timestamp="20181122 07:56:27.302" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20181122 07:56:27.302" starttime="20181122 07:56:07.302"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='boxes']/div</arg>
+</arguments>
+<assign>
+<var>@{cheep_goods}</var>
+</assign>
+<msg timestamp="20181122 07:56:27.325" level="INFO">@{cheep_goods} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="fed2ba8cc2b19f7144c46d1dcaddef74", element="0.18121093269955413-2")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="fed2ba8cc...</msg>
+<status status="PASS" endtime="20181122 07:56:27.326" starttime="20181122 07:56:27.303"></status>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<doc>Verifies that the given item is not empty.</doc>
+<arguments>
+<arg>${cheep_goods}</arg>
+</arguments>
+<msg timestamp="20181122 07:56:27.327" level="INFO">Length is 25</msg>
+<status status="PASS" endtime="20181122 07:56:27.327" starttime="20181122 07:56:27.326"></status>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='boxes']/div/div/div/a</arg>
+</arguments>
+<assign>
+<var>@{cheep_products}</var>
+</assign>
+<msg timestamp="20181122 07:56:27.345" level="INFO">@{cheep_products} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="fed2ba8cc2b19f7144c46d1dcaddef74", element="0.18121093269955413-27")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="fed2ba8c...</msg>
+<status status="PASS" endtime="20181122 07:56:27.345" starttime="20181122 07:56:27.327"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='boxes']/div/div/div/a[1]</arg>
+</arguments>
+<assign>
+<var>${the_ChepeastProduct}</var>
+</assign>
+<msg timestamp="20181122 07:56:27.375" level="INFO">${the_ChepeastProduct} = LEGO Boost 17101</msg>
+<status status="PASS" endtime="20181122 07:56:27.375" starttime="20181122 07:56:27.345"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${the_ChepeastProduct}</arg>
+<arg>LEGO Boost 17101</arg>
+</arguments>
+<status status="PASS" endtime="20181122 07:56:27.376" starttime="20181122 07:56:27.375"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${the_ChepeastProduct}</arg>
+</arguments>
+<msg timestamp="20181122 07:56:27.376" level="INFO">LEGO Boost 17101</msg>
+<status status="PASS" endtime="20181122 07:56:27.376" starttime="20181122 07:56:27.376"></status>
+</kw>
+<status status="PASS" endtime="20181122 07:56:27.377" starttime="20181122 07:56:07.265"></status>
+</kw>
+<tags>
+<tag>search_electronics</tag>
+</tags>
+<status status="PASS" endtime="20181122 07:56:27.377" critical="yes" starttime="20181122 07:56:00.917"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20181122 07:56:29.568" starttime="20181122 07:56:27.378"></status>
+</kw>
+<status status="PASS" endtime="20181122 07:56:29.569" starttime="20181122 07:55:48.494"></status>
 </suite>
-<status status="FAIL" endtime="20181121 08:14:59.889" starttime="20181121 08:14:43.523"></status>
+<status status="PASS" endtime="20181122 07:56:29.579" starttime="20181122 07:55:48.491"></status>
 </suite>
-<status status="FAIL" endtime="20181121 08:14:59.890" starttime="20181121 08:14:43.521"></status>
+<status status="PASS" endtime="20181122 07:56:29.583" starttime="20181122 07:55:48.488"></status>
 </suite>
-<status status="FAIL" endtime="20181121 08:14:59.892" starttime="20181121 08:14:43.519"></status>
+<status status="PASS" endtime="20181122 07:56:29.587" starttime="20181122 07:55:48.486"></status>
 </suite>
-<status status="FAIL" endtime="20181121 08:14:59.893" starttime="20181121 08:14:43.498"></status>
+<status status="PASS" endtime="20181122 07:56:29.590" starttime="20181122 07:55:48.459"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">search_electronics2</stat>
+<stat fail="0" pass="2">search_electronics</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Homework revie" pass="0">Homework revie</stat>
-<stat fail="1" id="s1-s1" name="Automation Practice Tests" pass="0">Homework revie.Automation Practice Tests</stat>
-<stat fail="1" id="s1-s1-s1" name="Tests" pass="0">Homework revie.Automation Practice Tests.Tests</stat>
-<stat fail="1" id="s1-s1-s1-s1" name="Automation Practice" pass="0">Homework revie.Automation Practice Tests.Tests.Automation Practice</stat>
-<stat fail="1" id="s1-s1-s1-s1-s1" name="eshopAlza" pass="0">Homework revie.Automation Practice Tests.Tests.Automation Practice.eshopAlza</stat>
+<stat fail="0" id="s1" name="Homework review" pass="2">Homework review</stat>
+<stat fail="0" id="s1-s1" name="Automation Practice Tests" pass="2">Homework review.Automation Practice Tests</stat>
+<stat fail="0" id="s1-s1-s1" name="Tests" pass="2">Homework review.Automation Practice Tests.Tests</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="Alza test" pass="2">Homework review.Automation Practice Tests.Tests.Alza test</stat>
+<stat fail="0" id="s1-s1-s1-s1-s1" name="TC Search" pass="2">Homework review.Automation Practice Tests.Tests.Alza test.TC Search</stat>
 </suite>
 </statistics>
 <errors>

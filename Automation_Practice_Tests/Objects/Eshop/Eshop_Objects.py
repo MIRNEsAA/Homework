@@ -32,10 +32,3 @@ Category_name = 'class=cat-name'
 Product_counter = 'class=heading-counter'
 Dress_size_s = 'id=layered_id_attribute_group_1'
 Dress_color_black = 'name=layered_id_attribute_group_11'
-
-# Alza
-Smart_section = 'xpath=//*[@id="left"]/ul/li[3]/div/a'
-Minprice = 'id=lblMinPrice'
-Maxprice = 'id=lblMaxPrice'
-BrandNew = 'id=hlCommodityStatusNew'
-
